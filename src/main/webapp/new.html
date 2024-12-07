@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Library System</title>
+</head>
+<body>
+    <h1>Insert Data into Library Inventory</h1>
+    <h2>Book</h2>
+    <form action="InsertBook" method="post">
+        <p>Item ID: <input type="text" name="itemId" required /></p>
+        <p>Title: <input type="text" name="title" required /></p>
+        <p>Author: <input type="text" name="author" required /></p>
+        <p>ISBN: <input type="text" name="isbn" required /></p>
+        <input type="hidden" name="itemType" value="Book" />
+        <p><input type="submit" value="INSERT BOOK" /></p>
+    </form>
+    
+    <h2>DVD</h2>
+    <form action="InsertDVD" method="post">
+        <p>Item ID: <input type="text" name="itemId" required /></p>
+        <p>Title: <input type="text" name="title" required /></p>
+        <p>Director: <input type="text" name="director" required /></p>
+        <p>Region Code: <input type="text" name="regionCode" required /></p>
+        <input type="hidden" name="itemType" value="DVD" />
+        <p><input type="submit" value="INSERT DVD" /></p>
+    </form>
+</body>
+</html>
